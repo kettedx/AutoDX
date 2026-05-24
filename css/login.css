@@ -1,0 +1,354 @@
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-image: url("../assets/logindx.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+/* OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: -1;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+header {
+    width: 95%;
+    height: 85px;
+
+    padding: 0 40px;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    background: rgba(10, 10, 20, 0.45);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 20px rgba(140, 0, 255, 0.18),
+        0 0 45px rgba(140, 0, 255, 0.08);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+.logo h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    background: linear-gradient(
+        270deg,
+        #fd0098 0%,
+        #006df3c4 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================
+   MENU
+========================= */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0008f8;
+    text-shadow: 0 0 10px #dd00ff, 0 0 25px #ea00ff;
+}
+
+
+/* =========================
+   BOTÃO LOGIN
+========================= */
+.btn-login {
+    padding: 12px 24px;
+    border-radius: 12px;
+
+    background: linear-gradient(90deg, #5d00ff, #9c0060);
+    color: white !important;
+
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.35);
+    transition: 0.3s ease;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px #0400ff, 0 0 40px #ff00f7;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+main {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 20px 40px;
+}
+
+
+/* =========================
+   LOGIN CONTAINER
+========================= */
+.login-container {
+    width: 450px;
+    padding: 50px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 28px;
+
+    box-shadow:
+        0 0 30px rgba(162, 0, 255, 0.20),
+        0 0 60px rgba(162, 0, 255, 0.08);
+
+    z-index: 1;
+}
+
+/* GLOW ANIMADO MAIS SEGURO */
+.login-container::before {
+    content: "";
+    position: absolute;
+
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(171, 30, 236, 0.06),
+        transparent
+    );
+
+    transform: rotate(25deg);
+    z-index: 0;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+.login-container h1 {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 900;
+
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        270deg,
+        #dc2727 0%,
+        #7e8fffc4 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-container p,
+.login-container h2 {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.893);
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: relative;
+    z-index: 2;
+}
+
+form input {
+    width: 100%;
+    height: 58px;
+
+    padding: 0 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid rgba(221, 0, 255, 0.55);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.35);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+form button {
+    width: 100%;
+    height: 58px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(90deg, #5d00ff, #9c0060);
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #0400ff, 0 0 40px #ff00f7;
+}
+
+
+/* =========================
+   REVEAL (JS)
+========================= */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   PARTICLES
+========================= */
+.particula {
+    position: fixed;
+    bottom: -10px;
+
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    animation: subir linear forwards;
+}
+
+@keyframes subir {
+    to {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 900px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 35px;
+    }
+
+    .login-container h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}

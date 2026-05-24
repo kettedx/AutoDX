@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTODX | Carros</title>
+    <link rel="stylesheet" href="./css/carros.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>AUTODX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="garagem.html">Garagem</a></li>
+                <li><a href="carros.html" class="active">Carros</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="login.html" class="btn-login">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+        <!-- TOPO -->
+        <section class="topo">
+            <div class="titulo-area">
+                <h1>TODOS OS CARROS</h1>
+                <p>Explore os melhores carros da garagem AUTODX </p>
+            </div>
+
+            <!-- PESQUISA -->
+            <div class="pesquisa">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Pesquisar carro..."
+                >
+            </div>
+        </section>
+
+        <!-- FILTROS -->
+        <section class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">  Todos  </button>
+            <button class="filter-btn" data-filter="Americana">   Americanos   </button>
+            <button class="filter-btn" data-filter="Japonesa">    Japoneses  </button>
+            <button class="filter-btn" data-filter="Europeia">    Europeus  </button>
+        </section>
+
+        <!-- GRID -->
+        <section class="carros-grid" id="carsGrid">
+
+            <!-- ================= AMERICANOS ================= -->
+
+            <div class="card-carro" data-serie="Americana">
+ <img src="assets-dx/cars_japoneses/cars_americanos/dodge_challenger_hellcat.png">
+                <div class="card-info">
+
+                    <p class="marca">DODGE</p>
+                    <h2>Dodge Challenger Hellcat</h2>
+                    <div class="specs">
+                        <span>717cv</span>
+                        <span>327km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Americana">
+                  <img src="assets-dx/cars_japoneses/cars_americanos/Ford_Mustang_Shelby_GT500.png">
+                <div class="card-info">
+                    <p class="marca">FORD</p>
+                    <h2>Mustang Shelby GT500</h2>
+                    <div class="specs">
+                        <span>760cv</span>
+                        <span>290km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Americana">
+ <img src="assets-dx/cars_japoneses/cars_americanos/Chevrolet_Camaro_ZL1.png">
+                <div class="card-info">
+                    <p class="marca">CHEVROLET</p>
+                    <h2>Camaro ZL1</h2>
+                    <div class="specs">
+                        <span>650cv</span>
+                        <span>318km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Americana">
+               <img src="assets-dx/cars_japoneses/cars_americanos/Chevrolet_Corvette_C8.png">
+                <div class="card-info">
+                    <p class="marca">CHEVROLET</p>
+                    <h2>Corvette C8</h2>
+                    <div class="specs">
+                        <span>495cv</span>
+                        <span>312km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Americana">
+     <img src="assets-dx/cars_japoneses/cars_americanos/Tesla_Model_S_Plaid.png">              
+                 <div class="card-info">
+                    <p class="marca">TESLA</p>
+                    <h2>Model S Plaid</h2>
+                    <div class="specs">
+                        <span>1020cv</span>
+                        <span>322km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Americana">
+  <img src="assets-dx/cars_japoneses/cars_americanos/Ford_GT.png">
+                <div class="card-info">
+                    <p class="marca">FORD</p>
+                    <h2>Ford GT</h2>
+                    <div class="specs">
+                        <span>660cv</span>
+                        <span>348km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Americana">
+ <img src="assets-dx/cars_japoneses/cars_americanos/Dodge_Viper.png">            
+                <div class="card-info">
+                    <p class="marca">DODGE</p>
+                    <h2>Dodge Viper</h2>
+                    <div class="specs">
+                        <span>645cv</span>
+                        <span>331km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+            <!-- faltou o carro chevrolet imapala 67 -->
+
+            <!-- ================= JAPONESES ================= -->
+
+            <div class="card-carro" data-serie="Japonesa">
+ <img src="assets-dx/cars_japoneses/gtr_35.png">
+                <div class="card-info">
+                    <p class="marca">NISSAN</p>
+                    <h2>GT-R R35</h2>
+                    <div class="specs">
+                        <span>570cv</span>
+                        <span>315km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+<!-- toyota ta errado, é o mlk4 e nao o 5-_- -->
+            <div class="card-carro" data-serie="Japonesa">
+                <img src="./imagens/toyota-supra-mk5.png">
+                <div class="card-info">
+                    <p class="marca">TOYOTA</p>
+                    <h2>Supra MK5</h2>
+                    <div class="specs">
+                        <span>387cv</span>
+                        <span>250km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+<!------------------------------------------------------------------>
+            <div class="card-carro" data-serie="Japonesa">
+  <img src="assets-dx/cars_japoneses/mazda_rx7_fd.png">
+                <div class="card-info">
+                    <p class="marca">MAZDA</p>
+                    <h2>Mazda RX-7</h2>
+                    <div class="specs">
+                        <span>280cv</span>
+                        <span>255km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Japonesa">
+   <img src="assets-dx/cars_japoneses/honda_nsx.png">
+                <div class="card-info">
+                    <p class="marca">HONDA</p>
+                    <h2>Honda NSX</h2>
+                    <div class="specs">
+                        <span>600cv</span>
+                        <span>307km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Japonesa">
+            <img src="assets-dx/cars_japoneses/mitsubishilancer_evolutionX.png">
+                <div class="card-info">
+                    <p class="marca">MITSUBISHI</p>
+                    <h2>Lancer Evolution X</h2>
+                    <div class="specs">
+                        <span>291cv</span>
+                        <span>250km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Japonesa">
+    <img src="assets-dx/cars_japoneses/subaru_wrx_sti.png">
+                <div class="card-info">
+                    <p class="marca">SUBARU</p>
+                    <h2>WRX STI</h2>
+                    <div class="specs">
+                        <span>310cv</span>
+                        <span>255km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+  <!--  faltou o supra mk4, toyota gr supra, missan silvia s15, nissan 370z -->
+
+            <!-- ================= EUROPEUS ================= -->
+
+            <!--  ta errado esse carai, é a hurucan evo -->
+            <div class="card-carro" data-serie="Europeia">
+                <img src="./imagens/lamborghini-aventador-svj.png">
+                <div class="card-info">
+                    <p class="marca">LAMBORGHINI</p>
+                    <h2>Aventador SVJ</h2>
+                    <div class="specs">
+                        <span>770cv</span>
+                        <span>350km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+<!------------------------------------------------------------ -->
+            <div class="card-carro" data-serie="Europeia">
+<img src="assets-dx/cars_japoneses/cars_europeus/ferrari_488_gtb.png">
+                <div class="card-info">
+                    <p class="marca">FERRARI</p>
+                    <h2>Ferrari 488 Pista</h2>
+                    <div class="specs">
+                        <span>720cv</span>
+                        <span>340km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+<!--  ta errado o carai do nome, é a 911 turbo -->
+            <div class="card-carro" data-serie="Europeia">
+                    <img src="assets-dx/cars_japoneses/cars_europeus/porshe911_turbos.png">
+                <div class="card-info">
+                    <p class="marca">PORSCHE</p>
+                    <h2>911 GT3 RS</h2>
+                    <div class="specs">
+                        <span>525cv</span>
+                        <span>296km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+<!-- ---------------------------------------------------------- -->
+            <div class="card-carro" data-serie="Europeia">
+  <img src="assets-dx/cars_japoneses/cars_europeus/mclaren_720s.png">
+                <div class="card-info">
+                    <p class="marca">MCLAREN</p>
+                    <h2>McLaren 720S</h2>
+                    <div class="specs">
+                        <span>720cv</span>
+                        <span>341km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Europeia">
+ <img src="assets-dx/cars_japoneses/cars_europeus/bugatti_chiron_super_sport300+.png">
+                <div class="card-info">
+                    <p class="marca">BUGATTI</p>
+                    <h2>Bugatti Chiron</h2>
+                    <div class="specs">
+                        <span>1500cv</span>
+                        <span>420km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="card-carro" data-serie="Europeia">
+     <img src="assets-dx/cars_japoneses/cars_europeus/pagani_huayra_bc.png">
+                <div class="card-info">
+                    <p class="marca">PAGANI</p>
+                    <h2>Pagani Huayra</h2>
+                    <div class="specs">
+                        <span>730cv</span>
+                        <span>383km/h</span>
+                    </div>
+                    <button>Ver detalhes</button>
+                </div>
+            </div>
+
+            <!-- ta faltando carro pa carai; rimac nevera, mercedes ang gtr, lotus evora gt, koenigsegg jesko,jaguarf type r, audi r8v10 plus, astonmartin db11, bmw m4, -->
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="seta esquerda" id="prevBtn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="seta direita" id="nextBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <span class="fechar" id="fechar">
+                &times;
+            </span>
+            <div class="modal-img">
+                <img id="modalImage" src="">
+            </div>
+            
+            <div class="modal-info">
+                <p class="modal-marca" id="modalMarca"></p>
+                <h1 id="modalTitulo"></h1>
+                <p id="modalDescricao">
+                    Super esportivo premium da AUTODX.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3>Potência</h3>
+                        <p id="modalPotencia"></p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Velocidade</h3>
+                        <p id="modalVelocidade"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll(".card-carro");
+        const modal = document.getElementById("modal");
+        const modalImage = document.getElementById("modalImage");
+        const modalMarca = document.getElementById("modalMarca");
+        const modalTitulo = document.getElementById("modalTitulo");
+        const modalPotencia = document.getElementById("modalPotencia");
+        const modalVelocidade = document.getElementById("modalVelocidade");
+        const fechar = document.getElementById("fechar");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        let currentIndex = 0;
+        function openModal(index){
+            currentIndex = index;
+            const card = cards[index];
+            modal.style.display = "flex";
+            modalImage.src =
+                card.querySelector("img").src;
+            modalMarca.innerText =
+                card.querySelector(".marca").innerText;
+            modalTitulo.innerText =
+                card.querySelector("h2").innerText;
+            modalPotencia.innerText =
+                card.querySelectorAll(".specs span")[0].innerText;
+            modalVelocidade.innerText =
+                card.querySelectorAll(".specs span")[1].innerText;
+        }
+        cards.forEach((card, index) => {
+            card.querySelector("button")
+            .addEventListener("click", () => {
+                openModal(index);
+            });
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex++;
+            if(currentIndex >= cards.length){
+                currentIndex = 0;
+            }
+            openModal(currentIndex);
+        });
+        prevBtn.addEventListener("click", () => {
+            currentIndex--;
+            if(currentIndex < 0){
+                currentIndex = cards.length - 1;
+            }
+            openModal(currentIndex);
+        });
+
+        fechar.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+        window.addEventListener("click", (e) => {
+            if(e.target === modal){
+                modal.style.display = "none";
+            }
+        });
+
+        /* PESQUISA */
+
+        const searchInput =
+            document.getElementById("searchInput");
+        searchInput.addEventListener("keyup", () => {
+            const value =
+                searchInput.value.toLowerCase();
+            cards.forEach(card => {
+                const text =
+                    card.innerText.toLowerCase();
+                if(text.includes(value)){
+                    card.style.display = "block";
+                }else{
+                    card.style.display = "none";
+                }
+            });
+        });
+
+        /* FILTRO */
+        const filterBtns =
+            document.querySelectorAll(".filter-btn");
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                document
+                    .querySelector(".filter-btn.active")
+                    .classList.remove("active");
+                btn.classList.add("active");
+                const filter =
+                    btn.dataset.filter;
+                cards.forEach(card => {
+                    if(
+                        filter === "all" ||
+                        card.dataset.serie === filter
+                    ){
+                        card.style.display = "block";
+                    }else{
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

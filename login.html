@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTODX | Login</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>AUTODX</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="garagem.html">Garagem</a></li>
+                <li><a href="carro.html">Carros</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- LOGIN -->
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <h1>Bem-vindo ao AUTODX </h1>
+            <p>Entre para acessar seu perfil</p>
+
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <p id="errorMsg"></p>
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

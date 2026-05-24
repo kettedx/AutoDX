@@ -1,0 +1,421 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #fff;
+    background: #050505;
+    position: relative;
+}
+
+/* BACKGROUND */
+body::after{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.82),
+            rgba(0,0,0,0.45)
+        ),
+        url("../assets/garagedx.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    filter: blur(2px);
+    transform: scale(1.1);
+
+    z-index: -2;
+}
+
+/* OVERLAY */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.55);
+
+    z-index: -1;
+}
+
+/* HEADER */
+header{
+    width: 95%;
+    height: 85px;
+
+    padding: 0 40px;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    background: rgba(10, 10, 20, 0.45);
+
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 20px rgba(189, 108, 255, 0.18),
+        0 0 45px rgba(140, 0, 255, 0.08);
+}
+
+/* LOGO */
+.logo h1{
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    background: linear-gradient(
+        270deg,
+        #fd0098 0%,
+        #006df3c4 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* MENU */
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+/* LINKS */
+nav ul li a{
+    color: rgb(255, 255, 255);
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+/* HOVER LINKS */
+nav ul li a:hover{
+    color: #0008f8;
+
+    text-shadow:
+        0 0 10px #dd00ff,
+        0 0 25px #ea00ff;
+}
+
+/* BOTÃO LOGIN */
+.btn-login{
+    padding: 12px 24px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #5d00ff,
+        #9c0060
+    );
+
+    color: white !important;
+
+    box-shadow:
+        0 0 15px rgba(168,85,247,0.35);
+
+    transition: 0.3s ease;
+}
+
+.btn-login:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px #0400ff,
+        0 0 40px #ff00f7;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+    min-height: 100vh;
+
+    padding:
+        160px
+        60px
+        80px;
+}
+
+/* TOPO */
+.topo{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.topo h1{
+    font-size: 58px;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+
+    background: linear-gradient(
+        270deg,
+        #dc2727 0%,
+        #7e8fffc4 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topo p{
+    font-size: 18px;
+
+    color: rgba(255, 255, 255, 0.893);
+
+    margin-bottom: 35px;
+}
+
+/* FILTROS */
+.filtros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+/* BOTÕES */
+.filtros button{
+    padding: 14px 28px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 14px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border 0.25s ease,
+        box-shadow 0.25s ease;
+
+    box-shadow:
+        0 0 15px rgba(140, 0, 255, 0.08);
+
+    min-width: 170px;
+}
+
+/* HOVER BOTÃO */
+.filtros button:hover{
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        90deg,
+        #3e00faa8,
+        #ff00bfc5
+    );
+
+    border-color: rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 0 20px #a855f7,
+        0 0 40px #a855f7;
+}
+
+/* CLICK */
+.filtros button:active{
+    transform: scale(0.96);
+}
+
+/* CATEGORIAS */
+.categoria{
+    margin-bottom: 80px;
+}
+
+/* TITULO CATEGORIA */
+.categoria h1{
+    font-size: 40px;
+    margin-bottom: 35px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        270deg,
+        #6200ff 0%,
+        #ff0000aa 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* GARAGEM */
+.garage-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+/* CARD */
+.card{
+    width: 320px;
+
+    background: rgba(0, 0, 0, 0.563);
+
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 254, 254, 0.178);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* HOVER CARD */
+.card:hover{
+    transform: translateY(-8px);
+
+    border-color: #2600ff;
+
+    box-shadow:
+        0 0 25px rgba(168, 85, 247, 0.35);
+}
+
+/* IMAGEM */
+.card img{
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* CONTEÚDO */
+.card-content{
+    padding: 22px;
+}
+
+/* MARCA */
+.card-content p{
+    font-size: 13px;
+
+    color: #ff0000;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 1px;
+}
+
+/* TITULO */
+.card-content h2{
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+/* HP */
+.card-content span{
+    font-size: 28px;
+
+    color: #003bfd95;
+
+    font-weight: 800;
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px){
+
+    header{
+        padding: 0 20px;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    main{
+        padding:
+            150px
+            20px
+            60px;
+    }
+
+    .topo h1{
+        font-size: 42px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+        height: auto;
+
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-top: 15px;
+    }
+
+    .filtros{
+        flex-direction: column;
+    }
+
+    .filtros button{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
