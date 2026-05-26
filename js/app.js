@@ -131,7 +131,7 @@ if (header) {
 // =========================
 // SCROLL REVEAL
 // =========================
-const revealElements = $$(".card-home, .card-carro, .card-sobre, .login-container");
+const revealElements = $$(".card-home, .card-carro, .card-sobre, .card-contato, .login-container");
 
 const observer = new IntersectionObserver((entries, obs) => {
 

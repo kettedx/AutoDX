@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AUTODX | Contato</title>
+
+    <link rel="stylesheet" href="./css/contato.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <h1>AUTODX</h1>
+        </div>
+
+        <!-- MENU -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="garagem.html">Garagem</a>
+                </li>
+
+                <li>
+                    <a href="carro.html">Carros</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="contato.html" class="ativo">Contato</a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="btn-login">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="card-contato">
+
+            <div class="contato-info">
+                <span class="subtitulo">FALE COM A AUTODX</span>
+
+                <h2>
+                    Vamos acelerar <br>
+                    sua proxima escolha.
+                </h2>
+
+                <p>
+                    Tem alguma duvida, sugestao ou quer saber mais sobre um carro da nossa garagem?
+                    Envie sua mensagem e nossa equipe retorna o mais rapido possivel.
+                </p>
+
+                <div class="linha"></div>
+
+                <div class="cards-info">
+                    <div class="info-box">
+                        <h3>EMAIL</h3>
+                        <span>contato@autodx.com</span>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>TELEFONE</h3>
+                        <span>(11) 99999-0000</span>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>HORARIO</h3>
+                        <span>Segunda a sexta, 9h as 18h</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form-contato" action="#" method="post">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opcao</option>
+                        <option value="garagem">Quero saber sobre um carro</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="parceria">Parceria</option>
+                        <option value="outro">Outro assunto</option>
+                    </select>
+                </div>
+
+                <div class="campo campo-mensagem">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+
+                <button type="submit">ENVIAR MENSAGEM</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
