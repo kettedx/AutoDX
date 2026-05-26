@@ -13,6 +13,7 @@ const $$ = (el) => document.querySelectorAll(el);
 // LOGIN SYSTEM
 // =========================
 const loginForm = document.getElementById("loginForm");
+const contatoForm = document.querySelector(".form-contato");
 
 if (loginForm) {
 
@@ -45,6 +46,24 @@ if (loginForm) {
             errorMsg.textContent = "Usuário ou senha incorretos!";
         }
 
+    });
+
+}
+
+if (contatoForm) {
+
+    contatoForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const botao = contatoForm.querySelector("button");
+        const textoOriginal = botao.textContent;
+
+        botao.textContent = "MENSAGEM ENVIADA";
+        contatoForm.reset();
+
+        setTimeout(() => {
+            botao.textContent = textoOriginal;
+        }, 2200);
     });
 
 }
