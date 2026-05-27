@@ -9,8 +9,8 @@
 <br><br>
 
 <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-red?style=for-the-badge&logo=github">
-<img src="https://img.shields.io/badge/HTML5-FRONTEND-orange?style=for-the-badge&logo=html5">
-<img src="https://img.shields.io/badge/CSS3-STYLING-blue?style=for-the-badge&logo=css3">
+<img src="https://img.shields.io/badge/HTML5-FRONTEND-orange?style=for-the-badge&logo=html">
+<img src="https://img.shields.io/badge/CSS3-STYLING-blue?style=for-the-badge&logo=css">
 <img src="https://img.shields.io/badge/JAVASCRIPT-INTERFACE-yellow?style=for-the-badge&logo=javascript">
 
 </div>
@@ -41,8 +41,8 @@ Inspirado em catálogos premium e garages modernas, o projeto busca entregar uma
 
 | Tecnologia | Função |
 |---|---|
-| HTML5 | Estrutura do site |
-| CSS3 | Estilização e animações |
+| HTML | Estrutura do site |
+| CSS  | Estilização e animações |
 | JavaScript | Interatividade |
 | GitHub Pages | Hospedagem |
 
@@ -67,11 +67,10 @@ Inspirado em catálogos premium e garages modernas, o projeto busca entregar uma
 
 <div align="center">
 
-
+<img width="100%" src="https://raw.githubusercontent.com/kettedx/AutoDX/main/assets/previa.png">
 
 </div>
 
-> 📌 Adicione uma screenshot atualizada do site futuramente.
 
 ---
 
@@ -89,13 +88,10 @@ Esse projeto foi desenvolvido para praticar:
 
 ---
 
-# 🔥 Futuras melhorias
+#  Futuras melhorias
 
-- [ ] Sistema de pesquisa
-- [ ] Filtro por marcas
-- [ ] Página individual dos carros
 - [ ] Sistema de favoritos
-- [ ] Login e cadastro
+- [ ] Login e cadastro reais
 - [ ] Integração com APIs
 - [ ] Melhor responsividade
 - [ ] Novas categorias automotivas
