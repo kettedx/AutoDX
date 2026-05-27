@@ -24,7 +24,7 @@ if (loginForm) {
         const password = $("#password").value;
         const errorMsg = $("#errorMsg");
 
-        // login simples (pode evoluir depois pra banco de dados)
+        // login simples 
         const userCorreto = "admin";
         const senhaCorreta = "1234";
 
